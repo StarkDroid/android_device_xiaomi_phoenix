@@ -23,3 +23,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # Netflix
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.netflix.bsp_rev=Q6150-17263-1
+
+# Graphics
+PRODUCT_PROPERTY_OVERRIDES += \
+    debug.cpurend.vsync=false
