@@ -73,6 +73,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
 #    GCam
 #    libmm-qcamera
 
+# Charger
+PRODUCT_PRODUCT_PROPERTIES += \
+    ro.charger.enable_suspend=true
+
 # Device Settings
 PRODUCT_PACKAGES += \
     XiaomiParts

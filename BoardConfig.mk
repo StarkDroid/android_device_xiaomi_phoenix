@@ -57,15 +57,19 @@ TARGET_FWK_SUPPORTS_FULL_VALUEADDS := true
 TARGET_USES_QTI_CAMERA_DEVICE := true
 TARGET_CAMERA_BOOTTIME_TIMESTAMP := true
 
-# Charger Mode
-BOARD_CHARGER_ENABLE_SUSPEND := true
-
 # Dex
 ifeq ($(HOST_OS),linux)
   ifneq ($(TARGET_BUILD_VARIANT),eng)
     WITH_DEXPREOPT ?= true
   endif
 endif
+
+# CNE and DPM
+BOARD_USES_QCNE := true
+
+# Crypto
+TARGET_HW_DISK_ENCRYPTION := true
+TARGET_CRYPTFS_HW_PATH ?= vendor/qcom/opensource/cryptfs_hw
 
 # Display
 TARGET_USES_HWC2 := true
