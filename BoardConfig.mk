@@ -163,9 +163,6 @@ BOARD_PLAT_PRIVATE_SEPOLICY_DIR += $(DEVICE_PATH)/sepolicy/private
 # Releasetools
 TARGET_RELEASETOOLS_EXTENSIONS := $(DEVICE_PATH)
 
-# Telephony
-TARGET_PROVIDES_QTI_TELEPHONY_JAR := true
-
 # Power
 TARGET_TAP_TO_WAKE_NODE := "/dev/input/event3"
 
