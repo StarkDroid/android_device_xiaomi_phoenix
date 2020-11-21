@@ -82,3 +82,7 @@ PRODUCT_PROPERTY_OVERRIDES += debug.sf.earlyGl.app.duration=21000000
 # Graphics
 PRODUCT_PRODUCT_PROPERTIES += \
     debug.hwui.renderer=skiavk
+
+# Graphics
+PRODUCT_PRODUCT_PROPERTIES += \
+    debug.sdm.support_writeback=0
