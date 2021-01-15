@@ -13,7 +13,17 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.corvus.maintainer=Trishiraj
 
 # Zygote preforking
-persist.device_config.runtime_native.usap_pool_enabled=true
+PRODUCT_PROPERTY_OVERRIDES += \
+    persist.device_config.runtime_native.usap_pool_enabled=true
 
 # Hack for Youtube
-sys.display-size=3840x2160
+PRODUCT_PROPERTY_OVERRIDES += \
+    sys.display-size=3840x2160
+
+# Set stock DPI
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.sf.lcd_density=440
+
+# Netflix
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.netflix.bsp_rev=Q6150-17263-1
