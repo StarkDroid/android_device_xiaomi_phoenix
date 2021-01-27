@@ -5,9 +5,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/corvus_phoenix.mk
+    $(LOCAL_DIR)/aicp_phoenix.mk
 
 COMMON_LUNCH_CHOICES := \
-    corvus_phoenix-user \
-    corvus_phoenix-userdebug \
-    corvus_phoenix-eng
+    aicp_phoenix-user \
+    aicp_phoenix-userdebug \
+    aicp_phoenix-eng

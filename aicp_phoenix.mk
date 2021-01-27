@@ -6,33 +6,26 @@
 
 $(call inherit-product, device/xiaomi/phoenix/device.mk)
 
-#Bootanimation
-scr_resolution := 1080
-TARGET_BOOT_ANIMATION_RES := 1080
-IS_PHONE := true
-
-# Gapps
-TARGET_GAPPS_ARCH := arm64
-
 # Faceunlock
 TARGET_FACE_UNLOCK_SUPPORTED := true
 
 # Inherit some common Corvus stuff.
-$(call inherit-product, vendor/corvus/config/common_full_phone.mk)
+$(call inherit-product, vendor/aicp/config/common_full_phone.mk)
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := corvus_phoenix
+PRODUCT_NAME := aicp_phoenix
 PRODUCT_DEVICE := phoenix
 PRODUCT_BRAND := POCO
 PRODUCT_MODEL := POCO X2
 PRODUCT_MANUFACTURER := Xiaomi
 
-#PRODUCT_BUILD_PROP_OVERRIDES += \
-#    PRIVATE_BUILD_DESC="coral-user 11 RQ1A.210105.003 7005429 release-keys"
-
 BUILD_FINGERPRINT := "google/sunfish/sunfish:11/RQ1A.210105.002/6985033:user/release-keys"
 
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.build.fingerprint=$(BUILD_FINGERPRINT)
+
+# AICP Device Maintainers
+PRODUCT_BUILD_PROP_OVERRIDES += \
+    DEVICE_MAINTAINERS="Trishiraj"
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
