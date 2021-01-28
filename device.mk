@@ -65,9 +65,9 @@ PRODUCT_COPY_FILES += \
 #    BluetoothQti
 
 # Camera
-PRODUCT_PACKAGES += \
-    GCam
-    libmm-qcamera
+#PRODUCT_PACKAGES += \
+#    GCam
+#    libmm-qcamera
 
 # Device Settings
 PRODUCT_PACKAGES += \
