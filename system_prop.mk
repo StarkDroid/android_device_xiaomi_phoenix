@@ -8,10 +8,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.bluetooth.library_name=libbluetooth_qti.so \
     vendor.bluetooth.soc=cherokee
 
-# Maintainer
-PRODUCT_PROPERTY_OVERRIDES += \
-    ro.corvus.maintainer=Trishiraj
-
 # Zygote preforking
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.device_config.runtime_native.usap_pool_enabled=true
