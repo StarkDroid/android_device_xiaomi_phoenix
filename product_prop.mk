@@ -24,7 +24,8 @@ PRODUCT_PRODUCT_PROPERTIES += \
     persist.camera.privapp.list=org.codeaurora.snapcam,com.android.camera,org.lineageos.snap \
     persist.vendor.camera.privapp.list=org.codeaurora.snapcam,com.android.camera,org.lineageos.snap \
     vendor.camera.aux.packagelist=org.codeaurora.snapcam,com.android.camera,org.lineageos.snap \
-    persist.camera.eis.enable=1
+    persist.camera.eis.enable=1 \
+    camera.disable_zsl_mode=1
 
 # Telephony
 PRODUCT_PRODUCT_PROPERTIES += \
