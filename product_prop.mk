@@ -81,8 +81,16 @@ PRODUCT_PROPERTY_OVERRIDES += debug.sf.earlyGl.app.duration=21000000
 
 # Graphics
 PRODUCT_PRODUCT_PROPERTIES += \
-    debug.hwui.renderer=skiavk
+    debug.hwui.renderer=skiavk \
+    debug.sdm.support_writeback=0 \
+    persist.sys.sf.color_mode=0 \
+    persist.sys.sf.color_saturation=1.0 \
+    persist.sys.sf.native_mode=0 \
+    ro.hardware.egl=adreno \
+    ro.hardware.vulkan=adreno \
+    ro.opengles.version=196610 \
+    debug.egl.hw=0 \
+    vendor.display.enable_optimize_refresh=1
 
-# Graphics
-PRODUCT_PRODUCT_PROPERTIES += \
-    debug.sdm.support_writeback=0
+
+

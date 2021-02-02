@@ -135,6 +135,11 @@ BOARD_USES_METADATA_PARTITION := true
 # Memory Config
 MALLOC_SVELTE := true
 
+# Graphics
+TARGET_USES_GRALLOC4 := true
+TARGET_USES_HWC2 := true
+TARGET_USES_ION := true
+
 # Power
 TARGET_USES_INTERACTION_BOOST := true
 
