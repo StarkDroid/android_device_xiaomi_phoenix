@@ -103,7 +103,7 @@ void vendor_load_properties() {
     }
 
     property_override("ro.oem_unlock_supported", "0");
-    property_override("ro.build.description", "phoenixin-user 10 QKQ1.190825.002 V11.0.6.0.QGHINXM release-keys");
+    property_override("ro.build.description", "phoenixin-user 10 QKQ1.190825.002 V12.0.2.0.QGHINXM release-keys");
     property_override_multifp("ro.build.fingerprint", "ro.system.build.fingerprint", "ro.bootimage.build.fingerprint",
-	    "ro.vendor.build.fingerprint", "ro.odm.build.fingerprint", "google/redfin/redfin:11/RQ1A.210105.003/7005429:user/release-keys");
+	    "ro.vendor.build.fingerprint", "ro.odm.build.fingerprint", "POCO/phoenixin/phoenixin:10/QKQ1.190825.002/V12.0.2.0.QGHINXM:user/release-keys");
 }
