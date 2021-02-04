@@ -5,5 +5,5 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/havoc_phoenix.mk
+    $(LOCAL_DIR)/dot_phoenix.mk
 

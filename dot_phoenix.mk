@@ -7,13 +7,17 @@
 $(call inherit-product, device/xiaomi/phoenix/device.mk)
 
 # Inherit some common stuff.
-$(call inherit-product, vendor/havoc/config/common_full_phone.mk)
+$(call inherit-product, vendor/dot/config/common.mk)
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := havoc_phoenix
+PRODUCT_NAME := dot_phoenix
 PRODUCT_DEVICE := phoenix
 PRODUCT_BRAND := POCO
 PRODUCT_MODEL := POCO X2
 PRODUCT_MANUFACTURER := Xiaomi
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
+
+# Set BootAnimation Resolution
+TARGET_BOOT_ANIMATION_RES := 1080
+
